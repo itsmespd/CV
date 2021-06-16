@@ -1,0 +1,157 @@
+ /**/
+
+body
+{
+	background-color: #232323;
+}
+.container-fluid
+{
+	padding: 1% 10%;
+}
+
+h1
+{
+	color: #39a6a3;
+	font-size: 2.5rem;
+	/*text-align: center;*/
+	padding-top: 5%;
+}
+.intro-para
+{
+	color: #39a6a3;
+	font-size: 3.5rem;
+	font-weight: bold;
+}
+
+.navbar
+{
+	padding: 0 0 2.5rem;
+}
+
+
+.navbar-brand
+{
+	font-size: 2.5rem;
+	/*font-weight: bold;*/
+}
+
+.nav-item
+{
+	padding: 0 18px;
+}
+
+/*.intro-para
+{
+	text-align: center;
+}*/
+
+.intro
+{
+	padding-bottom: 25px;
+}
+
+.col-md-12
+{
+	align-content: center;
+}
+
+#about-me
+{
+	padding: 1.5% 10%;
+	/*background-color: #39a6a3;*/
+}
+
+.about
+{
+	text-align: center;
+	padding: 1.5%;
+	color: #39a6a3;
+}
+
+hr
+{
+	/*#b2b8a3*/
+	border-color: #fff ;
+	border-style: none;
+	border-top-style: dotted;
+	border-width: 5px;
+	width: 5%;
+}
+
+h3
+{
+	color: 39a6a3;
+}
+
+.emps
+{
+	padding: 0;
+}
+
+.dev-icon
+{
+	color: #fff;
+}
+#skills
+{
+	text-align: center;
+}
+
+.card-deck
+{
+	padding: 1.5% 10%;
+}
+
+.skill-card
+{
+	background-color: #39a6a3;
+}
+/*body 
+{
+	background-color: #f9f7f7;
+}
+
+h1
+{
+	color: #112d4e;
+}
+
+h2
+{
+	color: #3f72af;
+}
+
+h3
+{
+	color: #3f72af;
+}
+
+hr
+{
+	border-color: #231e23;
+	border-style: none;
+	border-top-style: dotted;
+	border-width: 5px;
+	width: 3%;
+}
+
+a
+{
+	color: #3f72af;
+	text-decoration: none;
+}
+
+li
+{
+	color: #293b5f;
+}
+
+p
+{
+	color: #3f72af;;
+}
+
+footer.footer
+{
+	background-color: #e5d549;
+}*/

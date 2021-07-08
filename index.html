@@ -82,7 +82,7 @@
 						<p>Past: Tata Consultancy Services Limited</p>
 					</div>
 					<div class=" emps about col-md-6">
-						<p>Present: Deloitte Limited</p>
+						<p>Present: Deloitte Consulting Private Limited</p>
 					</div>
 
 				</div>
@@ -160,23 +160,32 @@
 
 		<section id="connect">
 
-			<div class="container-fluid">
-				
-				<div class="row">
-					<div class="about col-md-12">
-						<h2>Connect</h2>
-					</div>
-				</div>
-
+			<div class="about col-md-12">
+				<h3>Connect</h3>
 			</div>
-			
+
+
+			<form enctype="multipart/form-data" id="frmemail">
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <input type="text" class=""  name="form-name" id="name" placeholder= "Name" required="" >
+			      <label for="name">Name</label>			     
+			    </div>
+			    <div class="form-group col-md-6">
+			      <input type="email" class="form-email"  name="" id="email" placeholder= "Email" required="">
+			      <label for="email">Email</label>
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <textarea class=""  name="form-msg" id="message" placeholder= "Message" required=""></textarea>
+			    <label for="message">Message</label>
+			  </div>
+			  <div class="sendBtn col-md-12">
+			  	<button type="submit" class="btn btn-lg btn-primary">Send</button>
+			  </div>
+			</form>
+
 		</section>
 
-
-
-
-	<footer>
-		
-	</footer>
-
+		<script type="text/javascript" src="mail.js"></script>
 </html>

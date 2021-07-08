@@ -124,13 +124,13 @@ h3
 	text-align: center;
 }
 
-.btn
+.send
 {
 	background: #39a6a3;
 	color: #fff;
 }
 
-.btn:hover
+.send:hover
 {
 	background: #fff;
 	border-color: #39a6a3;
@@ -138,7 +138,7 @@ h3
 	color: #39a6a3;
 }
 
-.btn:visited
+.send:visited
 {
 	background: #39a6a3;
 	color: #fff;
@@ -217,3 +217,44 @@ textarea:focus + label {
   border-color:#39a6a3;
 }
 
+#status
+{
+	color: #fff;
+	width: 90%;
+	max-width: 500px;
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+	border-radius: 0.25rem;
+}
+
+#status.success
+{
+	background-color: #39a6a3;
+	animation: status 4s ease forwards;
+}
+
+#status.error
+{
+	background-color: #DF5E5E;
+	animation: status 4s ease forwards;
+}
+
+@Keyframes status
+{
+	0%
+	{
+		opacity: 1;
+		pointer-events: all;
+	}
+	90%
+	{
+		opacity: 1;
+		pointer-events: all;
+	}
+	100%
+	{
+		opacity: 0;
+		pointer-events: none;
+	}
+}

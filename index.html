@@ -165,14 +165,14 @@
 			</div>
 
 
-			<form enctype="multipart/form-data" id="frmemail">
+			<form action="mail.php" id="frmemail" method="POST">
 			  <div class="form-row">
 			    <div class="form-group col-md-6">
 			      <input type="text" class=""  name="form-name" id="name" placeholder= "Name" required="" >
 			      <label for="name">Name</label>			     
 			    </div>
 			    <div class="form-group col-md-6">
-			      <input type="email" class="form-email"  name="" id="email" placeholder= "Email" required="">
+			      <input type="email" class=""  name="form-email" id="email" placeholder= "Email" required="">
 			      <label for="email">Email</label>
 			    </div>
 			  </div>
@@ -186,6 +186,4 @@
 			</form>
 
 		</section>
-
-		<script type="text/javascript" src="mail.js"></script>
 </html>

@@ -180,7 +180,7 @@ input + label
   border:2px solid;
   border-width: 0 1.5px 0 1.5px;
   padding:0 5px;
-  transform: translateY(calc(50% + 5px));
+  transform: translateY(calc(50% + 3px));
 }
 
 textarea + label 

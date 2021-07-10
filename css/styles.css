@@ -1,26 +1,91 @@
- /**/
+/*#1A1A2E,#16213E,#0F3460,#E94560*/
 
-body
+/*body
+{
+	background-color: #232323;
+}*/
+html
+{
+  scroll-behavior: smooth;
+}
+
+#title
 {
 	background-color: #232323;
 }
+
 .container-fluid
 {
 	padding: 1% 10%;
 }
+
+/*#title
+{
+	background-color: #1A1A2E ;
+}*/
 
 h1
 {
 	color: #39a6a3;
 	font-size: 2.5rem;
 	/*text-align: center;*/
-	padding-top: 5%;
+	padding-top: 8%;
+	animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
 }
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
 .intro-para
 {
 	color: #39a6a3;
 	font-size: 3.5rem;
 	font-weight: bold;
+	padding-bottom: 17%;
+	animation-delay: 2s;
+	animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    margin-left: 100%;
+    width: 200%;
+  }
+
+  to {
+    opacity: 1;
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .navbar
@@ -58,7 +123,7 @@ h1
 #about-me
 {
 	padding: 1.5% 10%;
-	/*background-color: #39a6a3;*/
+	background-color: #2B2B2B;
 }
 
 .about
@@ -80,7 +145,7 @@ hr
 
 h3
 {
-	color: 39a6a3;
+	color: #39a6a3;
 }
 
 .emps
@@ -92,9 +157,11 @@ h3
 {
 	color: #fff;
 }
+
 #skills
 {
 	text-align: center;
+	background-color: #343434;
 }
 
 .card-deck
@@ -104,10 +171,26 @@ h3
 
 .skill-card
 {
-	background-color: #39a6a3;
+	background-color: #343434;
+	border:1.5px solid #39a6a3;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.45), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
 }
 
+.cardText
+{
+	color: #39a6a3 !important;
+}
+
+.database
+{
+	padding-top: 4rem;
+}
 /*------------------Connect section css------------------*/
+
+#connect
+{
+	background-color: #232323;
+}
 
 .form-group, .form-row
 {
@@ -257,4 +340,34 @@ textarea:focus + label {
 		opacity: 0;
 		pointer-events: none;
 	}
+}
+
+#footer
+{
+	background-color: #393E46;
+}
+
+.footerItmes
+{
+	padding: 0 2%;
+}
+
+.socials
+{
+	color: #39a6a3;
+}
+
+.socials:hover, .socials:visited
+{
+	color: #39a6a3;
+}
+
+.copy
+{
+	padding-top: 18px;
+}
+
+small
+{
+	color: #7E7474;
 }

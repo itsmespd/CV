@@ -15,7 +15,7 @@ var form = document.getElementById("formemail");
         status.innerHTML = "Thanks for your message! I will get back to you as soon as possible.";
         form.reset()
       }).catch(error => {
-        status.classList.add('success');
+        status.classList.add('error');
         status.innerHTML = "Oops! There was a problem! Please try again."
       });
     }

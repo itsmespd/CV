@@ -61,26 +61,24 @@ h1
 	color: #39a6a3;
 	font-size: 3.5rem;
 	font-weight: bold;
-	padding-bottom: 17%;
-	/*animation-delay: 2s;*/
-	animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-name: slidein;
+	width: 11.2ch;
+	animation: typing 2s steps(20), blinking .5s step-end infinite alternate;
+  	white-space: nowrap;
+  	overflow: hidden;
+  	border-right: 0.25rem solid;
 }
 
-@keyframes slidein {
-  from {
-    opacity: 0;
-    margin-left: 100%;
-    width: 150%;
+@keyframes typing {
+	from {
+	  width: 0
+	}
   }
-
-  to {
-    opacity: 1;
-    margin-left: 0%;
-    width: 100%;
+	  
+  @keyframes blinking {
+	50% {
+	  border-color: transparent
+	}
   }
-}
 
 .navbar
 {
@@ -112,6 +110,7 @@ h1
 .col-md-12
 {
 	align-content: center;
+	padding-bottom: 17%;
 }
 
 #about-me

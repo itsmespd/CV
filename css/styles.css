@@ -122,7 +122,7 @@ html, body
 
 #about-me
 {
-	padding: 1.5% 5%;
+	padding: 1.5% 3%;
 	background-color: #2B2B2B;
 }
 
@@ -137,6 +137,7 @@ html, body
 
 .first-block
 {
+	font-size: 1.2rem;
 	color: #fff;
 	padding-right: 2%;
 	padding-bottom: 2%;
@@ -144,6 +145,7 @@ html, body
 
 .second-block
 {
+	font-size: 1.2rem;
 	color: #39a6a3;
 	padding-left: 2%;
 	padding-bottom: 2%;
@@ -153,6 +155,11 @@ html, body
 {
 	color: #fff;
 	padding-left: 5%;
+}
+
+.hello-para p
+{
+	font-size: 1.2rem;
 }
 
 h2

@@ -1,6 +1,11 @@
-html
+html, body
 {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	width: 100%;
+	font-family: monospace;
 }
 
 #title
@@ -11,6 +16,8 @@ html
 .container-fluid
 {
 	padding: 1% 10%;
+	width: 100%;
+  	box-sizing: border-box;
 }
 
 /*#title
@@ -18,7 +25,7 @@ html
 	background-color: #1A1A2E ;
 }*/
 
-h1
+.intro-text
 {
 	color: #39a6a3;
 	font-size: 2.5rem;
@@ -61,7 +68,7 @@ h1
 	color: #39a6a3;
 	font-size: 3.5rem;
 	font-weight: bold;
-	width: 11.2ch;
+	width: 13ch;
 	animation: typing 2s steps(20), blinking .5s step-end infinite alternate;
   	white-space: nowrap;
   	overflow: hidden;
@@ -115,8 +122,42 @@ h1
 
 #about-me
 {
-	padding: 1.5% 10%;
+	padding: 1.5% 5%;
 	background-color: #2B2B2B;
+}
+
+.about-row
+{
+	padding-bottom: 17%;
+}
+.about-me
+{
+	padding-bottom: 8%;
+}
+
+.first-block
+{
+	color: #fff;
+	padding-right: 2%;
+	padding-bottom: 2%;
+}
+
+.second-block
+{
+	color: #39a6a3;
+	padding-left: 2%;
+	padding-bottom: 2%;
+}
+
+.hello-para
+{
+	color: #fff;
+	padding-left: 5%;
+}
+
+h2
+{
+	padding-bottom: 4%;
 }
 
 .about
@@ -125,6 +166,27 @@ h1
 	padding: 1.5%;
 	color: #39a6a3;
 }
+
+.employment-card, .skill-card {
+	background-color: #343434;
+	border: 1.5px solid #39a6a3;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.45), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+	margin-bottom: 20px;
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .employment-card:hover, .skill-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.45), 0 10px 30px 0 rgba(0, 0, 0, 0.35);
+  }
+  
+  .card-title {
+	color: #39a6a3;
+  }
+  
+  .card-text {
+	color: #39a6a3;
+  }
 
 hr
 {
@@ -203,12 +265,13 @@ h3
 .send
 {
 	background: #39a6a3;
-	color: #fff;
+	color: #232323;
+	border-color: #39a6a3;
 }
 
 .send:hover
 {
-	background: #fff;
+	background: #232323;
 	border-color: #39a6a3;
 	border-width: 1.5px;
 	color: #39a6a3;
@@ -217,7 +280,8 @@ h3
 .send:visited
 {
 	background: #39a6a3;
-	color: #fff;
+	color: #232323;
+	border-color: #39a6a3;
 }
 
 input:placeholder-shown + label {
@@ -366,4 +430,42 @@ small
 {
 	color: #7E7474;
 }
+
+/* Style for the link */
+.viewProfile, .footerItmes, .card-text, h3 {
+	text-decoration: none;
+	color: #39a6a3;
+	position: relative;
+	display: inline-block;
+	transition: color 0.3s ease;
+  }
+  
+  .viewProfile span {
+	display: inline-block;
+	position: relative;
+	font-size: 1.5rem;
+  }
+  
+  .viewProfile::after, .footerItmes::after, .card-text::after, h3::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #39a6a3;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+  }
+  
+  .viewProfile:hover::after, .footerItmes:hover::after, .card-text:hover::after, h3:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+  }
+  
+  .viewProfile:hover, .footerItmes:hover, .card-text:hover, h3:hover {
+	color: #7E7474;
+  }
+  
 

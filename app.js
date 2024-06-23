@@ -20,3 +20,17 @@ var form = document.getElementById("formemail");
       });
     }
     form.addEventListener("submit", handleSubmit)
+    
+    document.addEventListener("DOMContentLoaded", function () {
+      const cards = document.querySelectorAll('.employment-card');
+    
+      cards.forEach(card => {
+        card.addEventListener('mouseover', () => {
+          card.classList.add('animate__animated', 'animate__pulse');
+        });
+        card.addEventListener('mouseout', () => {
+          card.classList.remove('animate__animated', 'animate__pulse');
+        });
+      });
+    });
+    

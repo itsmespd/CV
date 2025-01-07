@@ -126,6 +126,11 @@ html, body
 	background-color: #2B2B2B;
 }
 
+#about-me h2
+{
+	color: #7E7474;
+}
+
 .about-row
 {
 	padding-bottom: 17%;
@@ -218,12 +223,6 @@ h3
 .dev-icon
 {
 	color: #fff;
-}
-
-#skills
-{
-	text-align: center;
-	background-color: #343434;
 }
 
 .card-deck
@@ -474,5 +473,211 @@ small
   .viewProfile:hover, .footerItmes:hover, .card-text:hover, h3:hover {
 	color: #7E7474;
   }
-  
+
+  /* Skills Section */
+#skills {
+    background-color: #2B2B2B;
+    color: #39a6a3;
+    text-align: center;
+    padding: 3% 10%;
+}
+
+#skills h1 {
+    margin-bottom: 2%;
+    font-size: 2.5rem;
+    color: #39a6a3;
+}
+
+#skills h2 {
+    font-size: 1.8rem;
+    color: #7E7474;
+    margin-bottom: 2%;
+}
+
+/* Primary Skills */
+.primary-skills {
+    margin-bottom: 4%;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.skill-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.skill-name {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color: #fff;
+}
+
+/* Progress Bar Animation */
+.progress {
+    width: 70%;
+    height: 25px;
+    background-color: #393E46;
+    border-radius: 12.5px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #39a6a3;
+    color: #232323;
+    text-align: center;
+    line-height: 25px;
+    font-size: 1rem;
+    border-radius: 12.5px;
+    width: 0; /* Start at 0 for animation */
+    transition: width 1.5s ease-in-out; /* Smooth width transition */
+}
+
+/* Secondary Skills */
+.secondary-skills {
+    margin-top: 4%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2%;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+.grid-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.grid-text {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Resume Section */
+#resume {
+    background-color: #232323;
+    color: #39a6a3;
+    padding: 3% 5%;
+}
+
+#resume h1 {
+    font-size: 2.5rem;
+    color: #39a6a3;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.resume-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Rows: Header on the left, content on the right */
+.resume-row {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+/* Header Section */
+.resume-header {
+    flex: 1;
+    text-align: right;
+    position: relative;
+    opacity: 0; /* Start hidden */
+    transform: translateX(-50px); /* Slide in from left */
+    transition: all 0.8s ease-in-out;
+}
+
+.resume-header.visible {
+    opacity: 1;
+    transform: translateX(0); /* Move to original position */
+}
+
+.section-header {
+    font-size: 1.8rem;
+    color: #7E7474;
+    text-transform: uppercase;
+}
+
+/* Content Section */
+.resume-content {
+    flex: 2;
+    text-align: left;
+    position: relative;
+    opacity: 0; /* Start hidden */
+    transform: translateX(50px); /* Slide in from right */
+    transition: all 0.8s ease-in-out;
+}
+
+.resume-content.visible {
+    opacity: 1;
+    transform: translateX(0); /* Move to original position */
+}
+
+.resume-item, .education-item, .certification-item {
+    margin-bottom: 1.5rem;
+}
+
+.resume-item h3, .education-item h3 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.resume-item p, .education-item p, .certification-item span {
+    font-size: 1rem;
+    color: #39a6a3;
+}
+
+.certification-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cert-logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Hobbies */
+.hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hobbies li {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 

@@ -100,3 +100,15 @@ var form = document.getElementById("formemail");
     handleScroll(); // Trigger on page load
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const introPhotoContainer = document.querySelector(".intro-photo-container");
+
+  // Trigger the photo animation when the page loads
+  function animateIntroPhoto() {
+      if (introPhotoContainer) {
+          introPhotoContainer.classList.add("visible");
+      }
+  }
+
+  animateIntroPhoto(); // Run animation on page load
+});

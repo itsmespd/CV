@@ -20,16 +20,68 @@ html, body
   	box-sizing: border-box;
 }
 
-/*#title
-{
-	background-color: #1A1A2E ;
-}*/
+/* Intro Section */
+.intro {
+  position: relative;
+  text-align: left;
+  padding: 3%;
+}
+
+/* Intro Photo (Desktop/Tablet) */
+.intro-photo-container {
+  text-align: center;
+  position: relative;
+  opacity: 0; /* Start hidden for animation */
+  transform: translateX(50px); /* Slide in from the right */
+  transition: all 1s ease-in-out;
+}
+
+.intro-photo-container.visible {
+  opacity: 1;
+  transform: translateX(0); /* Reset position after animation */
+}
+
+.intro-photo {
+  width: 250px;
+  height: 250px;
+}
+
+/* Adjustments for Tablets */
+@media (max-width: 992px) {
+  .intro-photo {
+      width: 120px;
+      height: 120px;
+  }
+}
+
+/* Mobile: Photo as Background */
+@media (max-width: 576px) {
+  /* .intro {
+      text-align: center;
+      background: url('../images/dp.png') no-repeat center center;
+      background-size: cover;
+      color: white;
+  } */
+
+  .intro-photo-container {
+      display: none; /* Hide photo container */
+  }
+
+  .intro-text {
+      font-size: 1.8rem;
+      color: #39a6a3;
+      margin-top: 20px;
+  }
+
+  .intro-para {
+      font-size: 1.2rem;
+  }
+}
 
 .intro-text
 {
 	color: #39a6a3;
 	font-size: 2.5rem;
-	/*text-align: center;*/
 	padding-top: 8%;
 	animation: fadeIn linear 1.5s;
   -webkit-animation: fadeIn linear 1.5s;
@@ -111,7 +163,7 @@ html, body
 
 .intro
 {
-	padding-bottom: 25px;
+	padding-bottom: 175px;
 }
 
 .col-md-12
@@ -128,7 +180,7 @@ html, body
 
 #about-me h2
 {
-	color: #7E7474;
+	color: #a6396b;
 }
 
 .about-row
@@ -490,7 +542,7 @@ small
 
 #skills h2 {
     font-size: 1.8rem;
-    color: #7E7474;
+    color: #F2AE66;
     margin-bottom: 2%;
 }
 
@@ -600,8 +652,9 @@ small
 /* Rows: Header on the left, content on the right */
 .resume-row {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 5%;
+    flex-wrap: wrap;
 }
 
 /* Header Section */
@@ -621,7 +674,7 @@ small
 
 .section-header {
     font-size: 1.8rem;
-    color: #7E7474;
+    color: #a6a639;
     text-transform: uppercase;
 }
 
@@ -680,4 +733,54 @@ small
     gap: 1rem;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 992px) { /* For tablets and smaller devices */
+  .resume-row {
+      flex-direction: column; /* Stack header and content vertically */
+      align-items: flex-start;
+  }
 
+  .resume-header {
+      text-align: left; /* Align header text to the left for smaller screens */
+      margin-bottom: 1rem; /* Add spacing between header and content */
+  }
+
+  .section-header {
+      font-size: 1.5rem;
+  }
+
+  .resume-content {
+      text-align: left;
+  }
+
+  .resume-item h3, .education-item h3 {
+      font-size: 1.3rem;
+  }
+
+  .resume-item p, .education-item p, .certification-item span {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) { /* For mobile devices */
+  .resume-header {
+      font-size: 1.3rem;
+  }
+
+  .section-header {
+      font-size: 1.3rem;
+  }
+
+  .resume-item h3, .education-item h3 {
+      font-size: 1.1rem;
+  }
+
+  .resume-item p, .education-item p, .certification-item span {
+      font-size: 0.85rem;
+  }
+
+  .cert-logo {
+      width: 40px;
+      height: 40px;
+  }
+}
